@@ -507,7 +507,6 @@ body.light-mode .video-bg:before {
   align-items: center;
   width: 100%;
   justify-content: space-between;
-  background-image: url("color1.jpg");
   border-radius: 14px;
   padding: 20px 40px;
 }
@@ -585,16 +584,17 @@ body.light-mode .video-bg:before {
   margin-top: 16px;
   line-height: 1.7em;
   color: #ebecec;
-  background-image: linear-gradient(to right, rgb(0, 0, 0),#cf0606);
+  background-image: linear-gradient(to right, rgb(0, 0, 0), #cf0606);
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
+  -moz-background-clip: text;
+  background-clip: text; /* Standard property */
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .content-tt {
@@ -603,16 +603,17 @@ body.light-mode .video-bg:before {
   margin-top: 16px;
   line-height: 1.7em;
   color: #ebecec;
-  background-image: linear-gradient(to right,#FE5000,#9B26B6);
+  background-image: linear-gradient(to right, #FE5000, #9B26B6);
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
+  -moz-background-clip: text;
+  background-clip: text; /* Standard property */
+  -webkit-text-fill-color: black;
+  -moz-text-fill-color: black;
 }
 
 .content-wrapper-context {
@@ -632,7 +633,7 @@ body.light-mode .video-bg:before {
 }
 
 .content-wrapper-img {
-  width: 150px;
+  width: 300px;
   -o-object-fit: cover;
      object-fit: cover;
   margin-top: -25px;
