@@ -537,7 +537,7 @@ img {
   font-size: 14px;
   margin-top: 16px;
   line-height: 1.7em;
-  color: #ebecec;
+  color: black;
   background-image: linear-gradient(to right, rgb(0, 0, 0), #cf0606);
   display: -webkit-box;
   -webkit-line-clamp: 4;
@@ -575,7 +575,7 @@ img {
 }
 
 .content-button {
-  background-color: #3a6df0;
+  background-color: black;
   border: none;
   padding: 8px 26px;
   color: #fff;
@@ -707,7 +707,7 @@ img {
 }
 
 .content-button:not(.open):hover {
-  background: #1e59f1;
+  background: grey;
 }
 
 .menu {
